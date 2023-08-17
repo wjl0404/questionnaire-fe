@@ -13,7 +13,7 @@ export async function registerService(
   password: string,
   nickname?: string
 ): Promise<ResDataType> {
-  const url = target + '/api/user/register'
+  const url = '/api/user/register'
   const body = { username, password, nickname: nickname || username }
   const data = (await axios.post(url, body)) as ResDataType
   return data
@@ -21,7 +21,7 @@ export async function registerService(
 
 // 登录
 export async function loginService(username: string, password: string): Promise<ResDataType> {
-  const url = target + '/api/user/login'
+  const url = '/api/user/login'
   const body = { username, password }
   const data = (await axios.post(url, body)) as ResDataType
   return data

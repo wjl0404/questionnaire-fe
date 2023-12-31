@@ -1,9 +1,9 @@
 import axios from 'axios'
 import { message } from 'antd'
 import { getToken } from '../utils/user-tokens'
-export const serverURL = 'https://questionnaire-mock-two.vercel.app'
+// export const serverURL = 'https://questionnaire-mock-two.vercel.app'
 const instance = axios.create({
-  timeout: 10 * 1000,
+  timeout: 100 * 1000,
 })
 
 // 请求拦截，带上token
@@ -25,6 +25,8 @@ instance.interceptors.response.use(res => {
     }
     throw new Error(msg)
   }
+  console.log(data)
+
   return data as any
 })
 

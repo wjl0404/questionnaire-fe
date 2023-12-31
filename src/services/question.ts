@@ -7,7 +7,7 @@ type SearchOption = {
   page: number
   pageSize: number
 }
-const target = 'https://questionnaire-mock-two.vercel.app'
+// const target = 'https://questionnaire-mock-two.vercel.app'
 // 获取单个问卷信息
 export async function getQuestionService(id: string): Promise<ResDataType> {
   const url = `/api/question/${id}`

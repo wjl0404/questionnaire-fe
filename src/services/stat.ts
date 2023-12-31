@@ -1,5 +1,5 @@
 import axios, { ResDataType } from './ajax'
-const target = 'https://questionnaire-mock-two.vercel.app'
+// const target = 'https://questionnaire-mock-two.vercel.app'
 // 获取问卷统计
 export async function getQuestionStatListService(
   questionId: string,

@@ -1,5 +1,5 @@
-import axios, { ResDataType, serverURL } from './ajax'
-const target = 'https://questionnaire-mock-two.vercel.app'
+import axios, { ResDataType } from './ajax'
+// const target = 'https://questionnaire-mock-two.vercel.app'
 // 获取用户信息
 export async function getUserInfoService(): Promise<ResDataType> {
   const url = '/api/user/info'

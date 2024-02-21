@@ -48,7 +48,7 @@ const StatHeader: FC = () => {
     if (!isPublished) {
       return null
     }
-    const url = `http://localhost:3000/question/${id}`
+    const url = `https://quesitonnarie-client.vercel.app/question/${id}`
     const QRCodeElem = (
       <div style={{ textAlign: 'center' }}>
         <QRCode value={url} size={150}></QRCode>

@@ -33,7 +33,7 @@ module.exports = {
   devServer: {
     port: 8000,
     proxy: {
-      // '/api': 'http://localhost:3000',
+      // '/api': 'http://localhost:3001',
       // '/api': 'https://questionnaire-mock-two.vercel.app',
     },
   },
